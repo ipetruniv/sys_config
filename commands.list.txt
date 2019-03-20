@@ -3,3 +3,7 @@
 setup-x86_64.exe -q -u -v -D -d  -n -N -X -R C:\cygwin64 -l C:\cygwin64\apps  -C base --site ftp://mirror.qnren.qa/cygwin/
 setup-x86.exe -q -u -v -D -d  -n -N -X -R C:\cygwin64 -l C:\cygwin64\apps  -C base --site ftp://mirror.qnren.qa/cygwin/
 
+
+E:\apps\jenkins-test-prod\
+E:\apps\jenkins-test-prod\jenkins-slave.xml
+E:\apps\jenkins-test-prod\slave.jar
