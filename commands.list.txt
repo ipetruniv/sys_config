@@ -7,3 +7,60 @@ setup-x86.exe -q -u -v -D -d  -n -N -X -R C:\cygwin64 -l C:\cygwin64\apps  -C ba
 E:\apps\jenkins-test-prod\
 E:\apps\jenkins-test-prod\jenkins-slave.xml
 E:\apps\jenkins-test-prod\slave.jar
+
+
+https://ajcp-jenkins01.corp.ad.ctc/
+https://ajcp-jenkins01.corp.ad.ctc/computer/d5lcajjkslv01-t/
+c:\temp\jenkins-slave.xml
+(Get-Content -path C:\temp\jenkins-slave.xml -Raw) -replace 'jre','jdk' | Set-Content -Path C:\temp\jenkins-slave.xml
+(Get-Content -path C:\temp\jenkins-slave.xml -Raw) -replace 'Files','Files (x86)' | Set-Content -Path C:\temp\jenkins-slave.xml
+
+
+Get-Content E:\apps\jenkins-test-prod\jenkins-slave.xml
+(Get-Content -path E:\apps\jenkins-test-prod\jenkins-slave.xml -Raw) -replace 'jre','jdk' | Set-Content -Path E:\apps\jenkins-test-prod\jenkins-slave.xml
+(Get-Content -path E:\apps\jenkins-test-prod\jenkins-slave.xml -Raw) -replace 'Files','Files (x86)' | Set-Content -Path E:\apps\jenkins-test-prod\jenkins-slave.xml
+Get-Content E:\apps\jenkins-test-prod\jenkins-slave.xml
+
+show running services
+net start
+
+
+jenkins service jenkinsslave-E__apps_jenkins-test-prod
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : d5lcajjkslv01
+   Primary Dns Suffix  . . . . . . . : labcorp.ad.ctc
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : labcorp.ad.ctc
+                                       labpetro.ad.ctc
+                                       labpsource.ad.ctc
+                                       corp.ad.ctc
+                                       retail.ad.ctc
+                                       petro.ad.ctc
+                                       psource.ad.ctc
+                                       cs.ctc
+                                       ns.ctc
+                                       dccs.ctc
+                                       fgl.net
+                                       fglcorporate.net
+                                       mww.lan
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : vmxnet3 Ethernet Adapter
+   Physical Address. . . . . . . . . : 00-50-56-BE-39-B1
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   IPv4 Address. . . . . . . . . . . : 10.127.51.110(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.254.0
+   Default Gateway . . . . . . . . . : 10.127.50.1
+   DNS Servers . . . . . . . . . . . : 10.127.91.43
+                                       10.127.91.44
+   NetBIOS over Tcpip. . . . . . . . : Disabled
+
+Node name 
+d5lcajjkslv01-t
