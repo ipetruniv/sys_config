@@ -1,0 +1,2 @@
+#Install cygwin tools
+setup-x86_64.exe -q -u -v -D -d  -n -N -X -R C:\cygwin64 -l C:\cygwin64\apps  -C base --site ftp://mirrors.netix.net/
