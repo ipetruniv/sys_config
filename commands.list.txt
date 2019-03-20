@@ -1,2 +1,5 @@
 #Install cygwin tools
-setup-x86_64.exe -q -u -v -D -d  -n -N -X -R C:\cygwin64 -l C:\cygwin64\apps  -C base --site ftp://mirrors.netix.net/
+#Keys list is there: https://cygwin.com/faq/faq.html#faq.setup.cli
+setup-x86_64.exe -q -u -v -D -d  -n -N -X -R C:\cygwin64 -l C:\cygwin64\apps  -C base --site ftp://mirror.qnren.qa/cygwin/
+setup-x86.exe -q -u -v -D -d  -n -N -X -R C:\cygwin64 -l C:\cygwin64\apps  -C base --site ftp://mirror.qnren.qa/cygwin/
+
